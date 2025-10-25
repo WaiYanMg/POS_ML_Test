@@ -490,7 +490,7 @@
             Controls.Add(dgv_items);
             Name = "frm_items";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "frm_items";
+            Text = "Items";
             Load += frm_items_Load;
             ((System.ComponentModel.ISupportInitialize)dgv_items).EndInit();
             contextMenuStrip1.ResumeLayout(false);
