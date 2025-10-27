@@ -1,0 +1,48 @@
+﻿# @POS_ML_API_HostAddress = http://localhost:5189
+
+# GET {{POS_ML_API_HostAddress}}/weatherforecast/
+# Accept: application/json
+
+###
+@POS_ML_API_HostAddress = http://localhost:5189
+Accept: application/json
+
+### ✅ Get all items
+GET {{POS_ML_API_HostAddress}}/api/items
+
+### 🔍 Get item by ID
+GET {{POS_ML_API_HostAddress}}/api/items/8d3a8b2f-7c7f-4a5b-9c47-7f38e6d2e9b0
+
+### ➕ Add new item
+POST {{POS_ML_API_HostAddress}}/api/items
+Content-Type: application/json
+
+{
+  "Item_Code": "ITM001",
+  "Item_Name": "LED Bulb",
+  "Item_Type": "Electronics",
+  "Description": "Energy-efficient bulb",
+  "Price": 5.50,
+  "Quantity": 100,
+  "Remark": "Imported stock",
+  "Created_By": "d9f22f91-ec2f-4d6d-bbb8-3d2bc1f84b70",
+  "Modified_By": "d9f22f91-ec2f-4d6d-bbb8-3d2bc1f84b70"
+}
+
+### ✏️ Update item
+PUT {{POS_ML_API_HostAddress}}/api/items/8d3a8b2f-7c7f-4a5b-9c47-7f38e6d2e9b0
+Content-Type: application/json
+
+{
+  "Item_Code": "ITM001",
+  "Item_Name": "LED Bulb - Updated",
+  "Item_Type": "Electronics",
+  "Description": "Updated stock",
+  "Price": 6.00,
+  "Quantity": 120,
+  "Remark": "Updated data",
+  "Modified_By": "d9f22f91-ec2f-4d6d-bbb8-3d2bc1f84b70"
+}
+
+### 🗑️ Delete item
+DELETE {{POS_ML_API_HostAddress}}/api/items/8d3a8b2f-7c7f-4a5b-9c47-7f38e6d2e9b0

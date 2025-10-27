@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+	  <TargetFramework>net9.0-windows7.0</TargetFramework>
+
+	  <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\POS_ML_Data\POS_ML_Data\POS_ML_Data.csproj" />
+    <ProjectReference Include="..\POS_ML_Test\POS_ML_Test.csproj" />
+  </ItemGroup>
+
+</Project>
